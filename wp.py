@@ -24,7 +24,7 @@ class color:
 
 r= requests.get("https://raw.githubusercontent.com/Fenrir-00/WPTMUX/main/version.txt")
 r=r.text
-if r != "version=2.3\n":
+if r != "version=0.1\n":
  os.system("clear")
  print((color.rojo + ('HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO\n') * 20))
  time.sleep(5)
