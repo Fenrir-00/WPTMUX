@@ -22,7 +22,7 @@ class color:
     rojo = '\033[91m'
     fin = '\033[0m'
 
-r= requests.get("https://raw.githubusercontent.com/Fenrir-00/investigar-web/main/version.txt")
+r= requests.get("https://raw.githubusercontent.com/Fenrir-00/WPTMUX/main/version.txt")
 r=r.text
 if r != "version=2.3\n":
  os.system("clear")
