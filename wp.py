@@ -153,7 +153,25 @@ def wp():
      print(f"{color.rojo}[×]El sitio web no parece utilizar WordPress.{color.fin}")
  
 def ayuda():
- pass
+ cabecera()
+ version()
+ print(f"""
+
+  {color.morado}         XLMRPC ATACK{color.verde}
+
+[✓]  HERRAMIENTA CREADA CON FINES EDUCATIVOS.
+
+[✓]  NOS AYUDA A DETECTAR SI UNA PAGINA TIENE WORDPRESS.
+
+[✓]  BUSCA SI LA VULNERABILIDAD XMLRPC ESTA ACTIVA.
+
+[✓]  TENDREMOS QUE ENCONTRAR EL USUARIO.
+
+[✓]  PROCEDE A UN ATAQUE POR FUERZA BRUTA
+
+""")
+ input(f"{color.cyan} PULSA CUALQUIER TECLA PARA CONTINUAR >>>{color.fin}")
+ menu()
 
 
 def ataque(url,usuario):
