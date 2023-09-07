@@ -102,8 +102,8 @@ def menu():
     elif eleccion == "2" :
      ayuda()
     elif eleccion == "0" :
-     banner()
-     salir() 
+     os.system("clear")
+     exit(0)
     else:
         incorrecto()
 
