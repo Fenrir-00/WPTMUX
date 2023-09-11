@@ -169,6 +169,8 @@ def ayuda():
 
 [✓]  PROCEDE A UN ATAQUE POR FUERZA BRUTA
 
+[✓] USO python3 wp.py
+
 """)
  input(f"{color.cyan} PULSA CUALQUIER TECLA PARA CONTINUAR >>>{color.fin}")
  menu()
@@ -206,5 +208,9 @@ def ataque(url,usuario):
     os.remove('log.log')
     os.remove('enviar.xml')
 
-menu()
+arg=sys.argv
+if len(arg) == 1:
+  menu()
+else:
+ ayuda()
 
